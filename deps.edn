@@ -1,0 +1,5 @@
+{:deps {scicloj/clojisr {:mvn/version "1.0.0-BETA19"}}
+ :aliases {:project/run {:main-opts
+                         ["-m" "wanderweg-navigator.core"
+                          "-Dclojure.tools.logging.factory" "clojure.tools.logging.impl/jul-factory"]}
+           :dev {:extra-deps {org.clojure/tools.namespace {:mvn/version "1.3.0"}}}}}
